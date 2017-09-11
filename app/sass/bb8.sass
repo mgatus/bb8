@@ -1,0 +1,583 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:300,400)
+
+@import url(https://fonts.googleapis.com/css?family=Anton)
+
+// @import "animate";
+
+$blue: #494c5f
+$orange: #c16d3e
+
+html
+  margin: 0
+  padding: 0
+
+body
+  background: #fff
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 0
+  padding: 0
+  font-family: 'Fira Sans', sans-serif
+
+a
+  text-decoration: none
+  color: pink
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+div
+  display: block
+
+*:before, *:after
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+.workplace
+  position: relative
+  display: flex
+  width: 100vw
+  height: 100vh
+  background: #fff
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  .message
+    font-family: 'Anton', sans-serif
+    font-size: 24px
+    color: pink
+    top: -170px
+    position: absolute
+    right: -640px
+    transform: rotate(-14deg)
+  .contents p
+    font-size: 11px
+  .line-dust
+    position: relative
+    left: -255px
+    top: 217px
+  .line-movement
+    position: relative
+    .line-one
+      position: absolute
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      background: #494c5f
+      top: -99px
+      left: 80px
+      &:after
+        width: 46px
+        height: 8px
+        content: ''
+        border: none
+        border-radius: 4px
+        background: #494c5f
+        position: absolute
+        top: 1px
+        left: 17px
+    &.two
+      top: 100px
+      .line-one
+        position: absolute
+        top: -140px
+        left: -70px
+        width: 20px
+        height: 8px
+        content: ''
+        border: none
+        border-radius: 4px
+        background: $blue
+        &:after
+          position: absolute
+          top: 0
+          left: 45px
+          width: 153px
+          height: 8px
+          content: ''
+          border: none
+          border-radius: 4px
+          background: $blue
+    &.three
+      top: 200px
+      left: 10px
+      .line-zero
+        position: absolute
+        top: -139px
+        left: -44px
+        width: 10px
+        height: 10px
+        border-radius: 50%
+        content: ''
+        border: none
+        background: $blue
+      .line-one
+        position: absolute
+        top: -139px
+        left: -13px
+        width: 26px
+        height: 8px
+        content: ''
+        border: none
+        border-radius: 4px
+        background: $blue
+        &:after
+          position: absolute
+          top: 0
+          left: 45px
+          width: 153px
+          height: 8px
+          content: ''
+          border: none
+          border-radius: 4px
+          background: $blue
+    &.four
+      top: 293px
+      left: 41px
+      .line-zero
+        position: absolute
+        top: -139px
+        left: -44px
+        width: 13px
+        height: 13px
+        border-radius: 50%
+        content: ''
+        border: none
+        background: $blue
+      .line-one
+        position: absolute
+        top: -139px
+        left: -11px
+        width: 26px
+        height: 13px
+        content: ''
+        border: none
+        border-radius: 4px
+        background: $blue
+        &:after
+          position: absolute
+          top: 0
+          left: 36px
+          width: 170px
+          height: 13px
+          content: ''
+          border: none
+          border-radius: 4px
+          background: $blue
+  .bb8
+    width: 500px
+    position: relative
+    z-index: 1
+  // bb8head
+  .bb8-head-container
+    position: relative
+    width: 450px
+    z-index: 10
+    height: 160px
+    overflow: hidden
+    transform: rotate(-12deg)
+  .bb8
+    .anttenae
+      position: relative
+      top: 38px
+      left: 206px
+      width: 6px
+      height: 30px
+      transform: rotate(-10deg)
+      border-radius: 2px
+      background: $blue
+      &:after
+        position: absolute
+        top: -25px
+        left: 20px
+        width: 6px
+        height: 49px
+        content: ''
+        border-radius: 2px
+        background: $blue
+    .bb8-head
+      border: 10px solid $blue
+      border-radius: 50%
+      width: 180px
+      height: 165px
+      position: relative
+      top: 15%
+      left: 34%
+      overflow: hidden
+      background: #D4D4D4
+      &:after
+        content: ''
+        background: #fff
+        border-radius: 50%
+        width: 126px
+        height: 126px
+        position: absolute
+        top: -29px
+        left: 48px
+      .bottom-line
+        position: relative
+        z-index: 1
+        top: 86px
+        height: 13px
+        /* border-top: 7px solid #fff;
+        border-right: 14px solid $blue
+        border-bottom: 1px solid $blue
+        border-left: 3px solid $blue
+        border-radius: 4px
+        background: $blue
+        width: 153px
+        left: 4px
+        .side-div
+          height: 11px
+          content: ''
+          transform: rotate(27deg)
+          border-left: 11px solid $blue
+          border-radius: 2px
+          width: 18px
+          top: -1px
+          position: absolute
+          left: -10px
+          &:after
+            position: absolute
+            top: -71px
+            right: -135px
+            width: 18px
+            height: 11px
+            content: ''
+            transform: rotate(-55deg)
+            border-left: 13px solid $blue
+            border-radius: 2px
+    .inner-top-lines,.inner-bottom-lines
+      position: relative
+      top: -75px
+      width: 48px
+      height: 9px
+      border: 2px solid #c16d3e
+      border-radius: 5px
+      background: #c16d3e
+      &:after
+        position: absolute
+        top: -1px
+        right: -87px
+        width: 47px
+        height: 9px
+        content: ''
+        border: 2px solid #c16d3e
+        border-radius: 5px
+        background: #c16d3e
+      &.inner-bottom-lines
+        top: -26px
+        left: -113px
+        width: 152px
+        &:after
+          top: -1px
+          right: -120px
+          width: 33px
+    .eyelens
+      position: absolute
+      width: 50px
+      height: 50px
+      border: 8px solid $blue
+      border-radius: 50%
+      top: -68px
+      left: 44px
+      background: #3C5B6D
+      overflow: hidden
+      &:after
+        width: 20px
+        height: 20px
+        content: ''
+        background: $blue
+        position: absolute
+        top: 28px
+        left: 54px
+        border-radius: 50%
+      .innereye
+        border-radius: 50%
+        background: #466f83
+        width: 35px
+        height: 35px
+        left: 6px
+        top: -8px
+        display: flex
+        position: relative
+        .reflection
+          position: relative
+          top: 12px
+          width: 5px
+          height: 5px
+          border-radius: 50%
+          background: #fff
+          left: 6px
+          &:after
+            position: absolute
+            top: 5px
+            left: 8px
+            width: 10px
+            height: 10px
+            content: ''
+            border-radius: 50%
+            background: #fff
+    .shadow-eyelens
+      position: absolute
+      z-index: -1
+      width: 50px
+      height: 50px
+      content: ''
+      background: #aeafaa
+      top: -65px
+      border-radius: 50%
+      left: 35px
+    .small-circles
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      background: #c16d3e
+      position: absolute
+      top: -18px
+      left: 45px
+      &:after
+        position: absolute
+        width: 20px
+        height: 20px
+        content: ''
+        border-radius: 50%
+        background: $blue
+        left: 48px
+        top: -10px
+  // end bb8 head
+  //  bb8 body
+  .bb8-body-container
+    position: relative
+    left: 145px
+    display: flex
+    width: 447px
+    justify-content: center
+    top: -45px
+    width: 280px
+    height: 280px
+    border-radius: 50%
+    overflow: hidden
+    .clip
+      width: 280px
+      height: 280px
+      border-radius: 50%
+      overflow: hidden
+    .shadow
+      position: absolute
+      z-index: 0
+      top: -114px
+      width: 500px
+      height: 500PX
+      transform: rotate(119deg)
+      border: 79px solid rgba(73, 76, 95, 0.46)
+      border-radius: 50%
+      left: -2px
+      background: #fff
+      &:before
+        position: absolute
+        z-index: 0
+        top: 310px
+        left: 58px
+        width: 120px
+        height: 94px
+        content: ''
+        transform: rotate(-139deg)
+        border-radius: 50%
+        background: rgba(73, 76, 95, 0.46)
+    .bb8-body
+      border: 10px solid $blue
+      border-radius: 50%
+      width: 280px
+      height: 280px
+      overflow: hidden
+      display: flex
+      position: relative
+      .orange_circles
+        border: 8px solid $blue
+        border-radius: 50%
+        width: 130px
+        height: 130px
+        background: $orange
+        display: flex
+        justify-content: center
+        align-items: center
+        .inner_circle
+          content: ''
+          border: 7px solid $blue
+          border-radius: 50%
+          width: 90px
+          height: 90px
+          display: flex
+          justify-content: center
+          align-items: center
+          background: #D4D4D4
+          .inner_inner_circle
+            border: 6px solid $blue
+            border-radius: 50%
+            width: 45px
+            height: 45px
+            background: #B2C0C9
+        .square_jag
+          position: absolute
+          width: 22px
+          height: 16px
+          content: ''
+          border-right: 7px solid $blue
+          border-bottom: 7px solid $blue
+          border-left: 7px solid $blue
+          border-radius: 6px
+          background: #c16d3e
+      .one
+        top: 53px
+        position: absolute
+        left: -55px
+        .square_jag.first
+          transform: rotate(67deg)
+          top: 34px
+          left: 81px
+        .square_jag.second
+          top: 83px
+          left: 61px
+          transform: rotate(155deg)
+      .two
+        position: absolute
+        top: 7px
+        left: 170px
+        .square_jag.first
+          top: 41px
+          left: 9px
+          transform: rotate(288deg)
+        .square_jag.second
+          top: 85px
+          left: 35px
+          transform: rotate(200deg)
+      .three
+        position: absolute
+        bottom: -54px
+        left: 86px
+        .square_jag.first
+          top: 41px
+          left: 9px
+          transform: rotate(288deg)
+        .square_jag.second
+          top: 24px
+          left: 73px
+          transform: rotate(410deg)
+      .line
+        position: relative
+        top: 70px
+        width: 116px
+        height: 10px
+        background: $blue
+        z-index: 0
+        transform: rotate(-8deg)
+        left: 59px
+        &:before
+          position: absolute
+          z-index: 0
+          top: 105px
+          left: -31px
+          width: 74px
+          height: 10px
+          content: ''
+          transform: rotate(53deg)
+          background: $blue
+        &:after
+          position: absolute
+          z-index: 0
+          top: 99px
+          left: 87px
+          width: 74px
+          height: 10px
+          content: ''
+          transform: rotate(128deg)
+          background: $blue
+      .disc
+        border: 6px solid $blue
+        position: absolute
+        top: 45px
+        left: 59px
+        width: 15px
+        height: 15px
+        background: #fff
+        content: ''
+        border-radius: 50%
+        &.two
+          left: 150px
+          top: 30px
+        &.three
+          left: 20px
+        &.four
+          left: 90px
+        &.five
+          top: 95px
+        &.six
+          top: 192px
+          left: 11px
+        &.seven
+          top: 240px
+          left: 64px
+        &.eight
+          top: 149px
+          left: 251px
+        &.nine
+          top: 211px
+          left: 220px
+  // end bb8 body
+  @-webkit-keyframes rotating
+    from
+      -ms-transform: rotate(0deg)
+      -moz-transform: rotate(0deg)
+      -webkit-transform: rotate(0deg)
+      -o-transform: rotate(0deg)
+      transform: rotate(0deg)
+    to
+      -ms-transform: rotate(360deg)
+      -moz-transform: rotate(360deg)
+      -webkit-transform: rotate(360deg)
+      -o-transform: rotate(360deg)
+      transform: rotate(360deg)
+
+  @keyframes rotating
+    from
+      -ms-transform: rotate(0deg)
+      -moz-transform: rotate(0deg)
+      -webkit-transform: rotate(0deg)
+      -o-transform: rotate(0deg)
+      transform: rotate(0deg)
+    to
+      -ms-transform: rotate(360deg)
+      -moz-transform: rotate(360deg)
+      -webkit-transform: rotate(360deg)
+      -o-transform: rotate(360deg)
+      transform: rotate(360deg)
+
+  @keyframes fade
+    from
+      opacity: 0
+    to
+      opacity: 1
+
+  @-webkit-keyframes fade
+    from
+      opacity: 0
+    to
+      opacity: 1
+
+  .rotating
+    -webkit-animation: rotating 1s cubic-bezier(0.58, 0.03, 0, 1.16) infinite
+    -moz-animation: rotating 1s cubic-bezier(0.58, 0.03, 0, 1.16) infinite
+    -ms-animation: rotating 1s cubic-bezier(0.58, 0.03, 0, 1.16) infinite
+    -o-animation: rotating 1s cubic-bezier(0.58, 0.03, 0, 1.16) infinite
+    animation: rotating 1s cubic-bezier(0.58, 0.03, 0, 1.16) infinite
+  .fade
+    -webkit-animation: fade 1s cubic-bezier(0.4, 0, 1, 1) infinite
+    -moz-animation: fade 1s cubic-bezier(0.4, 0, 1, 1) infinite
+    -ms-animation: fade 1s cubic-bezier(0.4, 0, 1, 1) infinite
+    -o-animation: fade 1s cubic-bezier(0.4, 0, 1, 1) infinite
+    animation: fade 1s cubic-bezier(0.4, 0, 1, 1) infinite
